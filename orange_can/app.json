@@ -1,13 +1,15 @@
 {
   "pages": [
     "pages/welcome/welcome",
+    "pages/post/post",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ECC0A8",
+    "navigationBarTitleText": "微信小程序",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
   }
 }
