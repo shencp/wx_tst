@@ -1,6 +1,31 @@
 //app.js
+// ------------------------------------------------------------------------------------------
+// var dataObj = require('data/data.js')
+// ------------------------------------------------------------------------------------------
+
 App({
-  onLaunch: function () {
+  onLaunch: function() {
+    // ------------------------------------------------------------------------------------------
+    // wx.setStorage({
+    //   key: 'postList',
+    //   data: dataObj.postList,
+    //   success: function(res) {
+    //     console.log('App--setStorage success')
+    //   },
+    //   fail: function() {
+    //     console.log('App--setStorage fail')
+    //   },
+    //   complete:function(){
+    //     console.log('App--setStorage complete')
+    //   }
+    // })
+    // var storageData = wx.getStorageSync('postList')
+    // if (!storageData) {
+    //   wx.setStorageSync('postList', dataObj.postList)
+    //   console.log('App---setStorageSync')
+    // }
+   
+    // ------------------------------------------------------------------------------------------
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())

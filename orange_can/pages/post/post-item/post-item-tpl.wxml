@@ -1,0 +1,22 @@
+  <view class='post-container'>
+    <view class='post-author-date'>
+      <image src='{{item1.avatar}}'></image>
+      <text>{{item1.object.date}}</text>
+    </view>
+
+    <text class='post-title'>{{item1.title}}</text>
+    <image class='post-images' src='{{item1.postImg}}' mode='widthFix'></image>
+
+    <text class='post-content'>
+     {{item1.content}}
+     </text>
+
+    <view class='post-like'>
+      <image src='/images/icon/wx_app_collect.png'></image>
+      <text>{{item1.collectionNum.array[0]}}</text>
+      <image src='/images/icon/wx_app_view.png'></image>
+      <text>{{item1.readingNum}}</text>
+      <image src='/images/icon/wx_app_message.png'></image>
+      <text>{{item1.commentNum}}</text>
+    </view>
+  </view>

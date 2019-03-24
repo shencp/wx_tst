@@ -1,9 +1,8 @@
 // pages/welcome/welcome.js
 Page({
   // ------------------------------------------------------------------------------------------
-
   onTpJp: function (event) {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../post/post',
       success: function () {
         console.log('jump success')
@@ -16,7 +15,6 @@ Page({
       }
     })
   },
-
   // ------------------------------------------------------------------------------------------
 
 
@@ -52,14 +50,14 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function() {
-
+    console.log('----onHide');
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function() {
-
+    console.log('----onUnload');
   },
 
   /**
