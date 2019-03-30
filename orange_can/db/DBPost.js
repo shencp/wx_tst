@@ -7,11 +7,11 @@ var DBPost=function(){
 DBPost.prototype={
   // @ get all article info
   getAllPostData:function(){
-    var res=wx.getStorageSync(this.storageKeyName);
-    if(!res){
+    // var res=wx.getStorageSync(this.storageKeyName);
+    // if(!res){
       var res=require('../data/data.js').postList;
       this.execSetStorageSync(res);
-    }
+    // }
     return res;
   },
 
@@ -21,6 +21,6 @@ DBPost.prototype={
   }
 };
 
-module.exports={
+module.exports = {
   DBPost:DBPost
 };

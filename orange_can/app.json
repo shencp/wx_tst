@@ -3,12 +3,14 @@
     "pages/welcome/welcome",
     "pages/post/post",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/post/post-detail/post-detail",
+    "pages/post/post-comment/post-comment"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#ECC0A8",
-    "navigationBarTitleText": "微信小程序",
+    "navigationBarTitleText": "文2019-03-26 22:09:07",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true
   }

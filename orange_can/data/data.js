@@ -2,6 +2,7 @@
 
 // ------------------------------------------------------------------------------------------
 var postList = [{
+    postID: 1,
     object: {
       date: "2019-3-17"
     },
@@ -16,6 +17,7 @@ var postList = [{
     commentNum: 99
   },
   {
+    postID: 2,
     object: {
       date: "2019-3-17"
     },
@@ -30,6 +32,7 @@ var postList = [{
     commentNum: 99
   },
   {
+    postID: 3,
     object: {
       date: "2019-3-17"
     },
@@ -44,6 +47,7 @@ var postList = [{
     commentNum: 99
   },
   {
+    postID: 4,
     object: {
       date: "2019-3-17"
     },
@@ -55,9 +59,11 @@ var postList = [{
     collectionNum: {
       array: [11]
     },
-    commentNum: 99
+    commentNum: 99,
+    collectionStatus: true
   },
   {
+    postID: 5,
     object: {
       date: "2019-3-17"
     },
@@ -75,6 +81,6 @@ var postList = [{
 ]
 // ------------------------------------------------------------------------------------------
 
-module.exports={
+module.exports = {
   postList: postList
 }

@@ -1,0 +1,33 @@
+<view class='container'>
+  <image clase='head-image' src='{{post.postImg}}'></image>
+
+  <text class='title'>{{post.title}}</text>
+
+  <view class='author-date'>
+    <view class='author-box'>
+      <image class='avator' src='{{post.avatar}}'></image>
+      <text class='author'>{{post.commentNum}}</text>
+    </view>
+    <text class='date'>{{post.commentNum}}</text>
+  </view>
+
+  <text class='detail'> {{post.content}}</text>
+
+</view>
+<!-- ------------------------------------------------------------------------------------------ -->
+<!-- @ 控件代码 -->
+<view class='tool'>
+  <view class='tool-item' catchtap='onUpTap' data-post-id='{{post.postID}}'>
+    <image src='/images/icon/wx_app_like.png'></image>
+    <text>{{post.commentNum}}</text>
+  </view>
+  <view class='tool-item commnet' catchtap='onCommentTap' data-post-id='{{post.postID}}'>
+    <image src='/images/icon/wx_app_message.png'></image>
+    <text>{{post.commentNum}}</text>
+  </view>
+  <view class='tool-item' catchtap='onCollectTap' data-post-id='{{post.postID}}'>
+    <image wx:if='{{post.collectionStatus}}' src='/images/icon/wx_app_collected.png'></image>
+    <image wx:else src='/images/icon/wx_app_collect.png'></image>
+    <text>{{post.commentNum}}</text>
+  </view>
+</view>

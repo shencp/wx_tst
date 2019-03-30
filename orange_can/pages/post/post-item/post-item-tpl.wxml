@@ -1,3 +1,4 @@
+<template name='postItemTpl'>
   <view class='post-container'>
     <view class='post-author-date'>
       <image src='{{item1.avatar}}'></image>
@@ -20,3 +21,4 @@
       <text>{{item1.commentNum}}</text>
     </view>
   </view>
+</template>

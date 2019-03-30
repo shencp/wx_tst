@@ -1,7 +1,9 @@
 // pages/post/post.js
 // ------------------------------------------------------------------------------------------
 // var DBPost = require('../../db/DBPost.js').DBPost;
-import {ES6DBPost} from '../../db/ES6DBPost.js'
+import {
+  ES6DBPost
+} from '../../db/ES6DBPost.js'
 // ------------------------------------------------------------------------------------------
 Page({
 
@@ -11,7 +13,15 @@ Page({
   data: {
 
   },
-
+  // ------------------------------------------------------------------------------------------
+  onTapToDetail(event) {
+    var postID=event.currentTarget.dataset.postId;
+    console.log('=====' + postID);
+    wx.navigateTo({
+      url: 'post-detail/post-detail?postId=' + postID,
+    })
+  },
+  // ------------------------------------------------------------------------------------------
   /**
    * 生命周期函数--监听页面加载
    */

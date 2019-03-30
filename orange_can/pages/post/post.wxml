@@ -1,5 +1,5 @@
 <!--pages/post/post.wxml-->
-<import src='post-item/post-item-tpl'/>
+<import src='post-item/post-item-tpl' />
 <view>
   <swiper indicator-dots='false' autoplay='false' interval='1000' circular='true' vertical='true'>
     <swiper-item>
@@ -14,6 +14,8 @@
   </swiper>
   <!-- ------------------------------------------------------------------------------------------ -->
   <block wx:for='{{postList}}' wx:for-item='item1' wx:for-index='idx'>
-    <include src='post-item/post-item-tpl.wxml'/>
+    <view catchtap='onTapToDetail' data-post-id='{{item1.postID}}'>
+      <template  is='postItemTpl' data='{{item1}}' />
+    </view>
   </block>
 </view>
